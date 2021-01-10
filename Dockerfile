@@ -18,3 +18,4 @@ RUN installGithub.r \
   --update FALSE \
   mvanhala/rutils
 
+RUN echo "TZ=America/Chicago" >> /usr/local/lib/R/etc/Renviron
