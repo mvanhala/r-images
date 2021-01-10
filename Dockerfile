@@ -7,5 +7,14 @@ RUN apt-get update -qq && \
 RUN install2.r --error \
   --deps TRUE \
   arrow \
+  bookdown \
   h2o \
-  lightgbm
+  lightgbm \
+  memuse \
+  pals \
+  viridis
+
+RUN installGithub.r \
+  --update FALSE \
+  mvanhala/rutils
+
